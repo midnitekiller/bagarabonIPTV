@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.direct2guests.d2g_tv.Activities.ServicesSpaCarLists">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/spabg"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="106dp">
+
+        <TextView
+            android:id="@+id/quatityIconTxt"
+            android:layout_width="128dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/cartll"
+            android:layout_alignStart="@id/cartll"
+            android:layout_marginStart="-126dp"
+            android:layout_marginEnd="-2dp"
+            android:layout_toStartOf="@id/cartll"
+            android:textAlignment="textEnd"
+            android:textColor="#723c92"
+            android:translationZ="30dp" />
+
+        <TextClock
+            android:id="@+id/textClock5"
+            android:layout_width="143dp"
+            android:layout_height="41dp"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/gothambook"
+            android:text="textClock"
+            android:textAlignment="textStart"
+            android:textColor="#723C92"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/guestNameTxtV5"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="644dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/gothambook"
+            android:text="@string/indexGuestName"
+            android:textAlignment="textStart"
+            android:textColor="#723C92"
+            android:textSize="14sp"
+            android:typeface="monospace" />
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="580dp"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cartll"
+            android:layout_toLeftOf="@+id/cartll"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/new_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/chat_message"
+                android:layout_alignParentEnd="false"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/badge_circle"
+                android:text="1"
+                android:textSize="16sp"
+                android:translationZ="10dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/chat_message"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/message_icon"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/SpaCarRL">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="222dp"
+                android:layout_height="65dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="-14dp"
+                android:layout_marginBottom="82dp"
+                android:src="@drawable/questlogo" />
+
+            <Button
+                android:id="@+id/HomeBtnSC"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignTop="@+id/BackButtonSC"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="117dp"
+                android:background="@drawable/home_logo"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <Button
+                android:id="@+id/BackButtonSC"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/back_logo"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/SCImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:layout_toRightOf="@+id/SCTitle"
+                android:backgroundTint="#2f000000"
+                android:scaleType="fitXY"
+                android:src="@drawable/spa"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/SpaCarRL"
+            android:layout_width="420dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent">
+
+            <RelativeLayout
+                android:id="@+id/SCCartLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/cartTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/cart_header_bg"
+                    android:fontFamily="@font/gothambook"
+                    android:padding="9dp"
+                    android:text="CART"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:id="@+id/CarSpaCartLists"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/confirmButton"
+                    android:layout_below="@+id/cartTxt"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:visibility="visible" />
+
+                <RelativeLayout
+                    android:id="@+id/confirmButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/cart_foot_bg"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:id="@+id/confirmOrderTxt"
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/confirm_button"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/gothambook"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="CONFIRM ORDER"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/grandTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_centerVertical="false"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/confirmOrderTxt"
+                        android:fontFamily="@font/gothambook"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:textColor="#fff"
+                        android:textSize="24sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/SpaCarListview"
+                android:layout_width="401dp"
+                android:layout_height="480dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="23dp"
+                android:choiceMode="singleChoice"
+                android:divider="#fcbd2e"
+                android:dividerHeight="1px"
+                android:drawSelectorOnTop="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:listSelector="#fcbd2e"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/cartll"
+            android:layout_width="101dp"
+            android:layout_height="73dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp">
+
+
+
+            <Button
+                android:id="@+id/CartButtonSC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/cart_logo"
+                android:textAlignment="textEnd" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

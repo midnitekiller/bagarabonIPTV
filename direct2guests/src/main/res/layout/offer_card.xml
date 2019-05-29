@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/offerCard"
+    android:layout_width="400dp"
+    android:layout_height="90dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="10dp"
+    android:background="#fff"
+    android:paddingLeft="3dp">
+
+    <ImageView
+        android:id="@+id/offImage"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/offTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/offImage"
+        android:fontFamily="@font/gothambook"
+        android:text="Title"
+        android:textColor="#723C92"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/offDesc"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offTitle"
+        android:layout_alignLeft="@+id/offTitle"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/gothambook"
+        android:text="Description here"
+        android:textColor="#723C92"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/offPromoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/gothambook"
+        android:text="TextView"
+        android:textColor="#723C92"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/offOldPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/offPromoPrice"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/gothambook"
+        android:text="price"
+        android:textColor="#723C92"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

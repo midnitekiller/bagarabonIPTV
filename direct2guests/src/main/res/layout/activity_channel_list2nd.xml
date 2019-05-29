@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.direct2guests.d2g_tv.Activities.ChannelListActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_gradient_end"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="110dp">
+
+        <RelativeLayout
+            android:id="@+id/TitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#262626"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Channel List"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/channelbg">
+
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/qbgf" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#b3FFFFFF"
+                tools:visibility="visible">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="272dp"
+                android:layout_height="540dp"
+                android:layout_marginStart="190dp"
+                android:background="#cc723c92"
+
+
+                >
+
+            </FrameLayout>
+
+            <TextClock
+                android:id="@+id/textClock2"
+                android:layout_width="143dp"
+                android:layout_height="41dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="459dp"
+                android:fontFamily="@font/gothambook"
+                android:gravity="top"
+                android:text="textClock"
+                android:textAlignment="textStart"
+                android:textColor="#723C92"
+                android:textSize="30sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/guestNameTxtV2"
+                android:layout_width="303dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/textClock2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="459dp"
+                android:fontFamily="@font/gothambook"
+                android:text="@string/indexGuestName"
+                android:textAlignment="viewEnd"
+                android:textColor="#723C92"
+                android:textSize="14sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/chan"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="110dp"
+                android:fontFamily="@font/gothambook"
+                android:text="@string/selectchannel"
+                android:textAlignment="center"
+                android:textColor="#fcbd2e"
+                android:textSize="24sp" />
+
+            <ListView
+                android:id="@+id/channelListview"
+                android:layout_width="216dp"
+                android:layout_height="308dp"
+                android:layout_below="@+id/chan"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="8dp"
+                android:divider="#fcbd2e"
+                android:dividerHeight="1px"
+                android:fadingEdge="horizontal"
+                android:focusableInTouchMode="false"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:listSelector="#fcbd2e">
+
+                <requestFocus />
+
+            </ListView>
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="364dp"
+                android:layout_height="168dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="515dp"
+                android:layout_marginTop="192dp"
+                android:src="@drawable/questlogo" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
